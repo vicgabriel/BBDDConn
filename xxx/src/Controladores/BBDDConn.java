@@ -8,7 +8,7 @@ import com.mysql.jdbc.Connection;
 public class BBDDConn {
 	private static final String URL = "jdbc:mysql://localhost/BBDD";
 	private static final String USERNAME = "root";
-	private static final String PASSWORD = "";
+	private static final String PASSWORD = "1234";
 	
 
 	public static Connection getConn() throws SQLException {

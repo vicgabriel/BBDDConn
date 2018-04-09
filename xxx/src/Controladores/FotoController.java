@@ -14,7 +14,7 @@ public class FotoController {
 		public static List<home> gethom(){
 		
 			List<home> theList = new ArrayList<home>();
-			String sql ="select * from Fotos where likes limit 3";
+			String sql ="select * from Fotos where likes limit 4";
 			
 			try (Connection conn = BBDDConn.getConn();
 					Statement stmt = conn.createStatement()) {
