@@ -1,4 +1,4 @@
-package Controladores;
+package controladores;
 
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -14,9 +14,9 @@ public class FotoController {
 		public static List<home> gethom(){
 		
 			List<home> theList = new ArrayList<home>();
-			String sql ="select * from Fotos where likes limit 4";
+			String sql ="SELECT idFotos,Usuario,url,likes FROM fotos ORDER BY likes DESC limit 3";			
 			
-			try (Connection conn = BBDDConn.getConn();
+			try (Connection conn = BDConn.getConn();
 					Statement stmt = conn.createStatement()) {
 				
 				ResultSet rs = stmt.executeQuery(sql);
