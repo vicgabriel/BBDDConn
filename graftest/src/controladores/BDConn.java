@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import com.mysql.jdbc.Connection;
 
 public class BDConn {
-	private static final String URL = "jdbc:mysql://localhost/bdatos";
+	private static final String URL = "jdbc:mysql://localhost/grafiti";
 	private static final String USERNAME = "root";
 	private static final String PASSWORD = "1234";
 	
